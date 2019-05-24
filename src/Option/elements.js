@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const Input = styled.input`
   display: none;
 `
+
 export const Container = styled.label`
   max-width: 260px;
   display: flex;
@@ -17,10 +18,14 @@ export const Container = styled.label`
   margin-right: 7px;
   &:hover {
     border: 2px solid #54c6c5;
-    background: f8f8f8;
+    background: #f8f8f8;
     cursor: pointer;
     transform: translateY(1px);
   }
+`
+export const ContainerActive = styled(Container)`
+  border: 2px solid #54c6c5;
+  background: #f8f8f8;
 `
 export const Icon = styled.img`
   width: 75px;

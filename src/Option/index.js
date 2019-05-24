@@ -1,5 +1,11 @@
 import React from 'react'
-import { Container, Description, Icon, Input } from './elements.js'
+import {
+  Container,
+  ContainerActive,
+  Description,
+  Icon,
+  Input
+} from './elements.js'
 
 export default class Option extends React.Component {
   state = {
@@ -23,14 +29,17 @@ export default class Option extends React.Component {
             this.toggleActive(e)
           }}
         />
-        <Container htmlFor={icon} name={icon} id={icon}>
-          {isActive ? (
+        {isActive ? (
+          <ContainerActive htmlFor={icon} name={icon} id={icon}>
             <Icon src={`/assets/blueIcons/${icon}.png`} alt="musicIcon" />
-          ) : (
+            <Description>{children}</Description>
+          </ContainerActive>
+        ) : (
+          <Container htmlFor={icon} name={icon} id={icon}>
             <Icon src={`/assets/greyIcons/${icon}.png`} alt="musicIcon" />
-          )}
-          <Description>{children}</Description>
-        </Container>
+            <Description>{children}</Description>
+          </Container>
+        )}
       </React.Fragment>
     )
   }

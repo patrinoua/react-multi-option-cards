@@ -11,10 +11,7 @@ export const OptionsContainer = styled.form`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  > input:checked + label {
-    border: 2px solid #54c6c5;
-    background: #f8f8f8;
-  }
+  max-width: 800px;
 `
 
 export const Regular = styled.div`
