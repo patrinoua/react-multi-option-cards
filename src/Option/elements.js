@@ -1,28 +1,43 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
+export const Input = styled.input`
+  display: none;
+`
+export const Container = styled.label`
   max-width: 260px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 260px;
+  width: 50%;
   height: 160px;
-  border: 1px solid #999999;
+  border: 2px solid #e4e4e4;
   border-radius: 10px;
-  margin-bottom: 7px;
+  margin-bottom: 9px;
   margin-right: 7px;
+  &:hover {
+    border: 2px solid #54c6c5;
+    background: f8f8f8;
+    cursor: pointer;
+    transform: translateY(1px);
+  }
 `
-export const IconContainer = styled.div`
-  width: 50px;
-  height: 50px;
-  background: grey;
-  margin-top: 15px;
+export const Icon = styled.img`
+  width: 75px;
+  height: 75px;
+  @media (max-width: 550px) {
+    width: 45px;
+    height: 45px;
+  }
 `
 export const Description = styled.div`
-  /* color: #999999;*/
   font-size: 1.3em;
-  margin-top: 15px;
+  margin-top: 7px;
   font-weight: 200;
+  color: #606060;
   font-family: sans-serif;
+  text-align: center;
+  @media (max-width: 550px) {
+    font-size: 1em;
+  }
 `

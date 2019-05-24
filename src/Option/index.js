@@ -1,17 +1,17 @@
 import React from 'react'
-import { Container, Description, IconContainer } from './elements.js'
+import { Container, Description, Icon, Input } from './elements.js'
 
 export default class Option extends React.Component {
   render() {
+    const { icon } = this.props
     return (
-      <Container
-        onClick={() => {
-          console.log('woop')
-        }}
-      >
-        <IconContainer>{this.props.icon}</IconContainer>
-        <Description> {this.props.children}</Description>
-      </Container>
+      <React.Fragment>
+        <Input type="checkbox" id={icon} />
+        <Container for={icon} name={icon} id={icon}>
+          <Icon src={`/assets/${icon}.png`} alt="musicIcon" />
+          <Description> {this.props.children}</Description>
+        </Container>
+      </React.Fragment>
     )
   }
 }

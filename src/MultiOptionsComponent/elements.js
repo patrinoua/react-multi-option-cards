@@ -7,11 +7,14 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
 `
-export const OptionsContainer = styled.div`
+export const OptionsContainer = styled.form`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 800px;
+  > input:checked + label {
+    border: 2px solid #54c6c5;
+    background: #f8f8f8;
+  }
 `
 
 export const Regular = styled.div`
