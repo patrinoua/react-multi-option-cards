@@ -17,8 +17,6 @@ export const Container = styled.label`
   margin-bottom: 9px;
   margin-right: 7px;
   &:hover {
-    border: 2px solid #54c6c5;
-    background: #f8f8f8;
     cursor: pointer;
     transform: translateY(1px);
   }
