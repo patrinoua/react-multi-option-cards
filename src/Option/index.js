@@ -3,13 +3,13 @@ import { Container, Description, Icon, Input } from './elements.js'
 
 export default class Option extends React.Component {
   render() {
-    const { icon } = this.props
+    const { icon, children, checkedOptions } = this.props
     return (
       <React.Fragment>
-        <Input type="checkbox" id={icon} />
-        <Container for={icon} name={icon} id={icon}>
+        <Input type="checkbox" id={icon} onClick={e => checkedOptions(e)} />
+        <Container htmlFor={icon} name={icon} id={icon}>
           <Icon src={`/assets/${icon}.png`} alt="musicIcon" />
-          <Description> {this.props.children}</Description>
+          <Description>{children}</Description>
         </Container>
       </React.Fragment>
     )
