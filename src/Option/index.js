@@ -31,12 +31,12 @@ export default class Option extends React.Component {
         />
         {isActive ? (
           <ContainerActive htmlFor={icon} name={icon} id={icon}>
-            <Icon src={`/assets/blueIcons/${icon}.png`} alt="musicIcon" />
+            <Icon src={`/assets/blueIcons/${icon}.png`} alt={`${icon}`} />
             <Description>{children}</Description>
           </ContainerActive>
         ) : (
           <Container htmlFor={icon} name={icon} id={icon}>
-            <Icon src={`/assets/greyIcons/${icon}.png`} alt="musicIcon" />
+            <Icon src={`/assets/greyIcons/${icon}.png`} alt={`${icon}`} />
             <Description>{children}</Description>
           </Container>
         )}
