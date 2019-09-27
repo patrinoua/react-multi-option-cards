@@ -1,3 +1,7 @@
+#React Multi Option Cards
+
+![](https://github.com/patrinoua/react-multi-option-cards/blob/master/MultiOptionsSelectorScreenshot.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
