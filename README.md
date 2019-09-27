@@ -1,4 +1,4 @@
-#React Multi Option Cards
+# React Multi Option Cards
 
 ![](https://github.com/patrinoua/react-multi-option-cards/blob/master/MultiOptionsSelectorScreenshot.png)
 
